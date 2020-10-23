@@ -1,0 +1,212 @@
+@vw:7.5vw;
+.dn {
+    display: none;
+}
+.pg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+// 宽高 
+.setwh(@w: 750, @h: 0) {
+    width: @w/@vw;
+    height: @h/@vw;
+}
+// 左上
+.lt(@l: 0, @t: 0) {
+    position: absolute;
+    left: @l/@vw;
+    top: @t/@vw;
+}
+
+//右上
+.rt(@r: 0, @t: 0) {
+    position: absolute;
+    right: @r/@vw;
+    top: @t/@vw;
+}
+
+//less 定位函数 左下
+.lb(@l: 0, @b: 0) {
+    position: absolute;
+    left: @l/@vw;
+    bottom: @b/@vw;
+}
+
+//右下
+.rb(@r: 0, @b: 0) {
+    position: absolute;
+    right: @r/@vw;
+    bottom: @b/@vw;
+}
+
+// 水平居中
+.cl(@w) {
+    position: absolute;
+    left: 50%;
+    margin-left: -@w/2/@vw;
+}
+
+// 垂直居中
+.ct(@h) {
+    position: absolute;
+    top: 50%;
+    margin-top: -@h/2/@vw;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    min-width: 750 / @vw;
+    max-width: 320 / @vw;
+    width: 750 / @vw;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.png) no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    .rectangular_wire {
+        .setwh(720,1435);
+        .cl(720);
+        .ct(1435);
+    }
+    .progress_bar {
+        .setwh(456,29);
+        .cl(456);
+        .ct(29);
+        background: url(../img/lod.png) no-repeat;
+        background-size: 100% 100%;
+        .bar-box {
+            .setwh(456,29);
+            .lt(0,0);
+            overflow: hidden;
+            border-radius: 20 / @vw;
+            .bar {
+                .setwh(456,29);
+                position: absolute;
+                left: -100%;
+                top: -1 / @vw
+            }
+           
+        }
+        .lod-sailboatpng {
+            .setwh(81,139);
+            .lt(0,-139);
+        }
+        .percent {
+            .setwh(75,40);
+            .cl(75);
+            top: 50 / @vw;
+            color: #fff;
+            font-size: 28 / @vw;
+        }
+    }
+    .home {
+        width: 100%;
+        height: 100%;
+        .rug {
+            .setwh(634,503);
+            .lt(10,588);
+            z-index: 0;
+        }
+        .weather {
+            width: 750 / @vw;
+            height: 100%;
+            .lt(0,0);
+        }
+        .house {
+            .setwh(333,90);
+            .lt(0,520);
+        }
+        .coco {
+            .setwh(173,157);
+            .rt(0,424);
+        }
+        .sailboat {
+            .setwh(71,238);
+            .lt(0,546);
+        }
+        .sunshade {
+            .setwh(151,130);
+            .rt(0,666)
+        }
+        .window {
+            .setwh(750,882);
+            .lt(0,0);
+        }
+        .cur-l {
+            .setwh(221,900);
+            .lt(0,0);
+        }
+        .cur-r {
+            .setwh(200,900);
+            .rt(0,0);
+        }
+
+        .table-lamp {
+            .setwh(130,219);
+            .lt(37,727);
+        }
+        .cabinet {
+            .setwh(120,173);
+            .rt(6,745);
+        }
+        .blanket {
+            .setwh(696,145);
+            .cl(696);
+            top: 970 / @vw;
+        }
+        .sofa {
+            .setwh(575,345);
+            .cl(575);
+            top: 730 / @vw;
+        }
+        .man {
+            .setwh(409,257);
+            .lt(124,684);
+            .person {
+                .setwh(409,257);
+            }
+        }
+        .botany {
+            .setwh(201,251);
+            .rt(0,896);
+        }
+        .text {
+            .setwh(493,129);
+            .cl(493);
+            top: 1140 / @vw;
+        }
+        .point {
+            .setwh(28,14);
+            .cl(28);
+            top: 1282 / @vw;
+        }
+        .begin-btn {
+            .setwh(237,107);
+            .cl(237);
+            top:1312 / @vw;
+            img {
+                .setwh(237,107);
+            }
+        }
+        .logo {
+            .setwh(123,165);
+            .cl(123);
+            top: 58 / @vw;
+        }
+        .slogan {
+            .setwh(712,334);
+            .cl(712);
+            top: 256 / @vw;
+        }
+    }
+}

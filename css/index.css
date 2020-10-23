@@ -1,0 +1,239 @@
+.dn {
+  display: none;
+}
+.pg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  min-width: 100vw;
+  max-width: 42.66666667vw;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+.box .rectangular_wire {
+  width: 96vw;
+  height: 191.33333333vw;
+  left: 50%;
+  margin-left: -48vw;
+  position: absolute;
+  top: 50%;
+  margin-top: -95.66666667vw;
+}
+.box .progress_bar {
+  width: 60.8vw;
+  height: 3.86666667vw;
+  left: 50%;
+  margin-left: -30.4vw;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.93333333vw;
+  background: url(../img/lod.png) no-repeat;
+  background-size: 100% 100%;
+}
+.box .progress_bar .bar-box {
+  width: 60.8vw;
+  height: 3.86666667vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+  border-radius: 2.66666667vw;
+}
+.box .progress_bar .bar-box .bar {
+  width: 60.8vw;
+  height: 3.86666667vw;
+  position: absolute;
+  left: -100%;
+  top: -0.13333333vw;
+}
+.box .progress_bar .lod-sailboatpng {
+  width: 10.8vw;
+  height: 18.53333333vw;
+  position: absolute;
+  left: 0vw;
+  top: -18.53333333vw;
+}
+.box .progress_bar .percent {
+  width: 10vw;
+  height: 5.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -5vw;
+  top: 6.66666667vw;
+  color: #fff;
+  font-size: 3.73333333vw;
+}
+.box .home {
+  width: 100%;
+  height: 100%;
+}
+.box .home .rug {
+  width: 84.53333333vw;
+  height: 67.06666667vw;
+  position: absolute;
+  left: 1.33333333vw;
+  top: 78.4vw;
+  z-index: 0;
+}
+.box .home .weather {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .home .house {
+  width: 44.4vw;
+  height: 12vw;
+  position: absolute;
+  left: 0vw;
+  top: 69.33333333vw;
+}
+.box .home .coco {
+  width: 23.06666667vw;
+  height: 20.93333333vw;
+  position: absolute;
+  right: 0vw;
+  top: 56.53333333vw;
+}
+.box .home .sailboat {
+  width: 9.46666667vw;
+  height: 31.73333333vw;
+  position: absolute;
+  left: 0vw;
+  top: 72.8vw;
+}
+.box .home .sunshade {
+  width: 20.13333333vw;
+  height: 17.33333333vw;
+  position: absolute;
+  right: 0vw;
+  top: 88.8vw;
+}
+.box .home .window {
+  width: 100vw;
+  height: 117.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .home .cur-l {
+  width: 29.46666667vw;
+  height: 120vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .home .cur-r {
+  width: 26.66666667vw;
+  height: 120vw;
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+}
+.box .home .table-lamp {
+  width: 17.33333333vw;
+  height: 29.2vw;
+  position: absolute;
+  left: 4.93333333vw;
+  top: 96.93333333vw;
+}
+.box .home .cabinet {
+  width: 16vw;
+  height: 23.06666667vw;
+  position: absolute;
+  right: 0.8vw;
+  top: 99.33333333vw;
+}
+.box .home .blanket {
+  width: 92.8vw;
+  height: 19.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -46.4vw;
+  top: 129.33333333vw;
+}
+.box .home .sofa {
+  width: 76.66666667vw;
+  height: 46vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -38.33333333vw;
+  top: 97.33333333vw;
+}
+.box .home .man {
+  width: 54.53333333vw;
+  height: 34.26666667vw;
+  position: absolute;
+  left: 16.53333333vw;
+  top: 91.2vw;
+}
+.box .home .man .person {
+  width: 54.53333333vw;
+  height: 34.26666667vw;
+}
+.box .home .botany {
+  width: 26.8vw;
+  height: 33.46666667vw;
+  position: absolute;
+  right: 0vw;
+  top: 119.46666667vw;
+}
+.box .home .text {
+  width: 65.73333333vw;
+  height: 17.2vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.86666667vw;
+  top: 152vw;
+}
+.box .home .point {
+  width: 3.73333333vw;
+  height: 1.86666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.86666667vw;
+  top: 170.93333333vw;
+}
+.box .home .begin-btn {
+  width: 31.6vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.8vw;
+  top: 174.93333333vw;
+}
+.box .home .begin-btn img {
+  width: 31.6vw;
+  height: 14.26666667vw;
+}
+.box .home .logo {
+  width: 16.4vw;
+  height: 22vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -8.2vw;
+  top: 7.73333333vw;
+}
+.box .home .slogan {
+  width: 94.93333333vw;
+  height: 44.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.46666667vw;
+  top: 34.13333333vw;
+}

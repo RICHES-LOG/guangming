@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+/* a点击出现灰色背景 */
+a {
+  text-decoration: none;
+  -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 禁止长按图片保存 */
+img {
+  pointer-events: none;
+}
+/* div点击出现灰色背景 */
+div {
+  -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+  /* 禁止文字选中 */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
