@@ -65,13 +65,14 @@ body {
     width: 750 / @vw;
     margin: 0 auto;
     height: 100%;
+    background: url(../img/bg.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 .box {
     width: 100%;
     height: 100%;
-    background: url(../img/bg.png) no-repeat;
-    background-size: 100% 100%;
+   
     overflow-x: hidden;
     .rectangular_wire {
         .setwh(720,1435);
@@ -109,6 +110,7 @@ body {
             font-size: 28 / @vw;
         }
     }
+    //首页
     .home {
         width: 100%;
         height: 100%;
@@ -133,6 +135,7 @@ body {
         .sailboat {
             .setwh(71,238);
             .lt(0,546);
+            animation: move 100s ease-in-out infinite alternate;
         }
         .sunshade {
             .setwh(151,130);
@@ -189,11 +192,13 @@ body {
             .setwh(28,14);
             .cl(28);
             top: 1282 / @vw;
+            animation: point 2s infinite;
         }
         .begin-btn {
             .setwh(237,107);
             .cl(237);
             top:1312 / @vw;
+            animation: scale 5s infinite alternate;
             img {
                 .setwh(237,107);
             }
@@ -208,5 +213,127 @@ body {
             .cl(712);
             top: 256 / @vw;
         }
+        
+    }
+    // 上传页
+    .uploading {
+      
+        .shield-box {
+            .setwh(632,746);
+            .cl(632);
+            top: 237 / @vw;
+            .portrait {
+                .setwh(576,672);
+                .cl(576);
+                top: 46 / @vw;
+            }
+            .shield {
+                .setwh(632,746);
+                .cl(632);
+            }
+        }
+        .text1 {
+            .setwh(408,87);
+            .cl(408);
+            top: 1075 / @vw;
+        }
+        .up-btn {
+            .setwh(260,107);
+            .cl(260);
+            top: 1264 / @vw;
+            img {
+                .setwh(260,107);
+            }
+        }
+    }
+    // 检测页
+    .detection {
+        .mirror-box {
+            .setwh(689,801);
+            .cl(689);
+            top:174 / @vw;
+            .mirror {
+                .setwh(689,801);
+                .cl(689);
+            }
+        }
+        .result-box {
+            .cl(481);
+            top: 946 / @vw;
+            li {
+                margin-bottom: 20 / @vw;
+            }
+            .eye-box {
+                .setwh(476,96);
+                .eye {
+                    .setwh(476,96);
+                }
+            }
+            .nose-box {
+                .setwh(474,112);
+                .nose {
+                    .setwh(474,112);
+                }
+            }
+            .cheek-box {
+                .setwh(481,90);
+                .cheek {
+                    .setwh(481,90);
+                }
+            }
+        }
+        .det-btn {
+            .setwh(321,86);
+            .cl(335);
+            top: 1318 / @vw;
+            overflow: hidden;
+            .detection-btn {
+                .setwh(321,107);
+            }
+        }
+    }
+    // 公共
+    .rectangular_wire {
+        .setwh(720,1435);
+        .cl(720);
+        .ct(1435);
+    }
+    .logo1 {
+        .setwh(97,129);
+        .lt(81,74);
+    }
+    .music {
+        .setwh(79,79);
+        .rt(58,62);
+    }
+}
+@keyframes move {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100vw);
+    }
+}
+@keyframes point {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(0, 5px);
+    }
+    100% {
+      transform: translate(0);
+    }
+}  
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
     }
 }

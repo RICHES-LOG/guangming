@@ -16,12 +16,12 @@ body {
   width: 100vw;
   margin: 0 auto;
   height: 100%;
+  background: url(../img/bg.png) no-repeat;
+  background-size: 100% 100%;
 }
 .box {
   width: 100%;
   height: 100%;
-  background: url(../img/bg.png) no-repeat;
-  background-size: 100% 100%;
   overflow-x: hidden;
 }
 .box .rectangular_wire {
@@ -116,6 +116,7 @@ body {
   position: absolute;
   left: 0vw;
   top: 72.8vw;
+  animation: move 100s ease-in-out infinite alternate;
 }
 .box .home .sunshade {
   width: 20.13333333vw;
@@ -208,6 +209,7 @@ body {
   left: 50%;
   margin-left: -1.86666667vw;
   top: 170.93333333vw;
+  animation: point 2s infinite;
 }
 .box .home .begin-btn {
   width: 31.6vw;
@@ -216,6 +218,7 @@ body {
   left: 50%;
   margin-left: -15.8vw;
   top: 174.93333333vw;
+  animation: scale 5s infinite alternate;
 }
 .box .home .begin-btn img {
   width: 31.6vw;
@@ -236,4 +239,161 @@ body {
   left: 50%;
   margin-left: -47.46666667vw;
   top: 34.13333333vw;
+}
+.box .uploading .shield-box {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 31.6vw;
+}
+.box .uploading .shield-box .portrait {
+  width: 76.8vw;
+  height: 89.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -38.4vw;
+  top: 6.13333333vw;
+}
+.box .uploading .shield-box .shield {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+}
+.box .uploading .text1 {
+  width: 54.4vw;
+  height: 11.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -27.2vw;
+  top: 143.33333333vw;
+}
+.box .uploading .up-btn {
+  width: 34.66666667vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.33333333vw;
+  top: 168.53333333vw;
+}
+.box .uploading .up-btn img {
+  width: 34.66666667vw;
+  height: 14.26666667vw;
+}
+.box .detection .mirror-box {
+  width: 91.86666667vw;
+  height: 106.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -45.93333333vw;
+  top: 23.2vw;
+}
+.box .detection .mirror-box .mirror {
+  width: 91.86666667vw;
+  height: 106.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -45.93333333vw;
+}
+.box .detection .result-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -32.06666667vw;
+  top: 126.13333333vw;
+}
+.box .detection .result-box li {
+  margin-bottom: 2.66666667vw;
+}
+.box .detection .result-box .eye-box {
+  width: 63.46666667vw;
+  height: 12.8vw;
+}
+.box .detection .result-box .eye-box .eye {
+  width: 63.46666667vw;
+  height: 12.8vw;
+}
+.box .detection .result-box .nose-box {
+  width: 63.2vw;
+  height: 14.93333333vw;
+}
+.box .detection .result-box .nose-box .nose {
+  width: 63.2vw;
+  height: 14.93333333vw;
+}
+.box .detection .result-box .cheek-box {
+  width: 64.13333333vw;
+  height: 12vw;
+}
+.box .detection .result-box .cheek-box .cheek {
+  width: 64.13333333vw;
+  height: 12vw;
+}
+.box .detection .det-btn {
+  width: 42.8vw;
+  height: 11.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.33333333vw;
+  top: 175.73333333vw;
+  overflow: hidden;
+}
+.box .detection .det-btn .detection-btn {
+  width: 42.8vw;
+  height: 14.26666667vw;
+}
+.box .rectangular_wire {
+  width: 96vw;
+  height: 191.33333333vw;
+  left: 50%;
+  margin-left: -48vw;
+  position: absolute;
+  top: 50%;
+  margin-top: -95.66666667vw;
+}
+.box .logo1 {
+  width: 12.93333333vw;
+  height: 17.2vw;
+  position: absolute;
+  left: 10.8vw;
+  top: 9.86666667vw;
+}
+.box .music {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+  position: absolute;
+  right: 7.73333333vw;
+  top: 8.26666667vw;
+}
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100vw);
+  }
+}
+@keyframes point {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
