@@ -18,11 +18,12 @@ body {
   height: 100%;
   background: url(../img/bg.png) no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 .box {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .box .rectangular_wire {
   width: 96vw;
@@ -304,12 +305,10 @@ body {
   margin-left: -32.06666667vw;
   top: 126.13333333vw;
 }
-.box .detection .result-box li {
-  margin-bottom: 2.66666667vw;
-}
 .box .detection .result-box .eye-box {
   width: 63.46666667vw;
   height: 12.8vw;
+  margin-bottom: 2vw;
 }
 .box .detection .result-box .eye-box .eye {
   width: 63.46666667vw;
@@ -318,6 +317,7 @@ body {
 .box .detection .result-box .nose-box {
   width: 63.2vw;
   height: 14.93333333vw;
+  margin-bottom: 4vw;
 }
 .box .detection .result-box .nose-box .nose {
   width: 63.2vw;
@@ -342,6 +342,150 @@ body {
 }
 .box .detection .det-btn .detection-btn {
   width: 42.8vw;
+  height: 14.26666667vw;
+}
+.box .eye-damage .obscuration-box {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .eye-damage .obscuration-box .obscuration {
+  width: 100vw;
+  height: 195.6vw;
+}
+.box .eye-damage .obscuration-box .rtb {
+  width: 81.86666667vw;
+  height: 82.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -40.93333333vw;
+  top: 42.66666667vw;
+}
+.box .eye-damage .obscuration-box .liang {
+  width: 44.4vw;
+  height: 84.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.2vw;
+  top: 39.2vw;
+}
+.box .eye-damage .obscuration-box .text2 {
+  width: 52.4vw;
+  height: 39.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -26.2vw;
+  top: 130.4vw;
+}
+.box .eye-damage .detection-result .meteor1 {
+  width: 34.8vw;
+  height: 8.26666667vw;
+  position: absolute;
+  left: 9.06666667vw;
+  top: 88.93333333vw;
+}
+.box .eye-damage .detection-result .meteor2 {
+  width: 42.4vw;
+  height: 20vw;
+  position: absolute;
+  right: 1.86666667vw;
+  top: 98.13333333vw;
+}
+.box .eye-damage .detection-result .meteor3 {
+  width: 42.53333333vw;
+  height: 20.13333333vw;
+  position: absolute;
+  left: 2.66666667vw;
+  top: 103.06666667vw;
+}
+.box .eye-damage .detection-result .mirror-box {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 26.66666667vw;
+}
+.box .eye-damage .detection-result .mirror-box .mirror {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+}
+.box .eye-damage .detection-result .mirror-box .ren {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: -7.86666667vw;
+  top: -26.66666667vw;
+}
+.box .eye-damage .detection-result .meteor {
+  width: 34.8vw;
+  height: 30.8vw;
+  position: absolute;
+  right: 4vw;
+  top: 22.26666667vw;
+}
+.box .eye-damage .detection-result .star {
+  width: 7.86666667vw;
+  height: 8.8vw;
+  position: absolute;
+  left: 19.06666667vw;
+  top: 67.73333333vw;
+}
+.box .eye-damage .detection-result .star1 {
+  width: 7.73333333vw;
+  height: 8.53333333vw;
+  position: absolute;
+  right: 16.8vw;
+  top: 60vw;
+}
+.box .eye-damage .detection-result .star2 {
+  width: 12.26666667vw;
+  height: 14.53333333vw;
+  position: absolute;
+  right: 18.93333333vw;
+  top: 42.93333333vw;
+}
+.box .eye-damage .detection-result .eye-1 {
+  width: 23.6vw;
+  height: 50.26666667vw;
+  position: absolute;
+  right: 15.06666667vw;
+  top: 79.06666667vw;
+}
+.box .eye-damage .detection-result .copy {
+  width: 78.13333333vw;
+  height: 28.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.06666667vw;
+  top: 136vw;
+}
+.box .eye-damage .detection-result .det-btn {
+  width: 80.4vw;
+  height: 11.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.06666667vw;
+  top: 170.4vw;
+  display: flex;
+  justify-content: space-between;
+}
+.box .eye-damage .detection-result .det-btn .create-btn {
+  width: 42.8vw;
+  height: 11.33333333vw;
+}
+.box .eye-damage .detection-result .det-btn .create-btn .create {
+  width: 42.8vw;
+  height: 14.26666667vw;
+}
+.box .eye-damage .detection-result .det-btn .again-btn {
+  width: 31.73333333vw;
+  height: 11.33333333vw;
+}
+.box .eye-damage .detection-result .det-btn .again-btn .again {
+  width: 31.73333333vw;
   height: 14.26666667vw;
 }
 .box .rectangular_wire {

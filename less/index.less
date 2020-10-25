@@ -67,13 +67,13 @@ body {
     height: 100%;
     background: url(../img/bg.png) no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .box {
     width: 100%;
     height: 100%;
-   
-    overflow-x: hidden;
+    overflow: hidden;
     .rectangular_wire {
         .setwh(720,1435);
         .cl(720);
@@ -260,17 +260,16 @@ body {
         .result-box {
             .cl(481);
             top: 946 / @vw;
-            li {
-                margin-bottom: 20 / @vw;
-            }
             .eye-box {
                 .setwh(476,96);
+                margin-bottom: 15 / @vw;
                 .eye {
                     .setwh(476,96);
                 }
             }
             .nose-box {
                 .setwh(474,112);
+                margin-bottom: 30 / @vw;
                 .nose {
                     .setwh(474,112);
                 }
@@ -289,6 +288,101 @@ body {
             overflow: hidden;
             .detection-btn {
                 .setwh(321,107);
+            }
+        }
+    }
+    // 眼睛受损
+    .eye-damage {
+        .obscuration-box {
+            .setwh(750,1467);
+            .lt(0,0);
+            .obscuration {
+                .setwh(750,1467);
+            }
+            .rtb {
+                .setwh(614,621);
+                .cl(614);
+                top: 320 / @vw;
+            }
+            .liang {
+                .setwh(333,631);
+                .cl(333);
+                top: 294 / @vw;
+            }
+            .text2 {
+                .setwh(393,298);
+                .cl(393);
+                top: 978 / @vw;
+            }
+        }
+        .detection-result {
+            .meteor1{
+                .setwh(261,62);
+                .lt(68,667);
+            }
+            .meteor2 {
+                .setwh(318,150);
+                .rt(14,736);
+            }
+            .meteor3 {
+                .setwh(319,151);
+                .lt(20,773);
+            }
+            .mirror-box {
+                .setwh(632,736);
+                .cl(632);
+                top: 200 / @vw;
+                .mirror {
+                    .setwh(632,736);
+                }
+                .ren {
+                    .setwh(750,1467);
+                    .lt(-59,-200)
+                }
+            }
+            .meteor {
+                .setwh(261,231);
+                .rt(30,167);
+            }
+            .star {
+                .setwh(59,66);
+                .lt(143,508);
+            }
+            .star1 {
+                .setwh(58,64);
+                .rt(126,450);
+            }
+            .star2 {
+                .setwh(92,109);
+                .rt(142,322);
+            }
+            .eye-1 {
+                .setwh(177,377);
+                .rt(113,593);
+            }
+            .copy {
+                .setwh(586,214);
+                .cl(586);
+                top: 1020 / @vw;
+            }
+            .det-btn {
+                .setwh(603,85);
+                .cl(586);
+                top: 1278 / @vw;
+                display: flex;
+                justify-content: space-between;
+                .create-btn {
+                    .setwh(321,85);
+                    .create {
+                        .setwh(321,107);
+                    }
+                }
+                .again-btn {
+                    .setwh(238,85);
+                    .again {
+                        .setwh(238,107);
+                    }
+                }
             }
         }
     }
