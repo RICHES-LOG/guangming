@@ -66,7 +66,7 @@ body {
     margin: 0 auto;
     height: 100%;
     background: url(../img/bg.png) no-repeat;
-    background-size: 100% 100%;
+    // background-size: 100%;
     overflow: hidden;
 }
 
@@ -226,6 +226,7 @@ body {
                 .setwh(576,672);
                 .cl(576);
                 top: 46 / @vw;
+                border-radius: 15% 15% 80% 80%;
             }
             .shield {
                 .setwh(632,746);
@@ -316,72 +317,352 @@ body {
             }
         }
         .detection-result {
-            .meteor1{
-                .setwh(261,62);
-                .lt(68,667);
-            }
-            .meteor2 {
-                .setwh(318,150);
-                .rt(14,736);
-            }
-            .meteor3 {
-                .setwh(319,151);
-                .lt(20,773);
-            }
-            .mirror-box {
-                .setwh(632,736);
-                .cl(632);
-                top: 200 / @vw;
-                .mirror {
-                    .setwh(632,736);
-                }
-                .ren {
-                    .setwh(750,1467);
-                    .lt(-59,-200)
-                }
-            }
-            .meteor {
-                .setwh(261,231);
-                .rt(30,167);
-            }
-            .star {
-                .setwh(59,66);
-                .lt(143,508);
-            }
-            .star1 {
-                .setwh(58,64);
-                .rt(126,450);
-            }
-            .star2 {
-                .setwh(92,109);
-                .rt(142,322);
-            }
-            .eye-1 {
-                .setwh(177,377);
-                .rt(113,593);
-            }
             .copy {
                 .setwh(586,214);
                 .cl(586);
                 top: 1020 / @vw;
             }
-            .det-btn {
-                .setwh(603,85);
+        }
+        .stock {
+           .copy1 {
+               .setwh(506,209);
+               .cl(506);
+               top: 982 / @vw;
+           }
+        }
+        // 眼睛受损公共
+        .meteor1{
+            .setwh(261,62);
+            .lt(68,667);
+        }
+        .meteor2 {
+            .setwh(318,150);
+            .rt(14,736);
+        }
+        .meteor3 {
+            .setwh(319,151);
+            .lt(20,773);
+        }
+        .mirror-box {
+            .setwh(632,736);
+            .cl(632);
+            top: 200 / @vw;
+            .mirror {
+                .setwh(632,736);
+            }
+            .ren {
+                .setwh(750,1467);
+                .lt(-59,-200)
+            }
+        }
+        .meteor {
+            .setwh(261,231);
+            .rt(30,167);
+        }
+        .star {
+            .setwh(59,66);
+            .lt(143,508);
+        }
+        .star1 {
+            .setwh(58,64);
+            .rt(126,450);
+        }
+        .star2 {
+            .setwh(92,109);
+            .rt(142,322);
+        }
+        .eye-1 {
+            .setwh(177,377);
+            .rt(113,593);
+        }
+    }
+    // 鼻子受损
+    .nose-damage {
+        .obscuration-box {
+            .setwh(750,1467);
+            .lt(0,0);
+            .obscuration {
+                .setwh(750,1467);
+                .lt(0,0);
+            }
+            .nose-2 {
+                .setwh(614,621);
+                .cl(614);
+                top: 320 / @vw;
+            }
+            .nose-1 {
+                .setwh(333,631);
+                .cl(333);
+                top: 294 / @vw;
+            }
+            .nose-copy {
+                .setwh(299,190);
+                .cl(299);
+                top: 978 / @vw;
+            }
+            .nose-copy2 {
+                .setwh(505,264);
+                .cl(505);
+                top: 1044 / @vw;
+            } 
+        }
+        .detection-result {
+            .nose-img1 {
+                .setwh(267,314);
+                .rt(74,664);
+            }
+            .copy3 {
+                .setwh(586,212);
                 .cl(586);
-                top: 1278 / @vw;
-                display: flex;
-                justify-content: space-between;
-                .create-btn {
-                    .setwh(321,85);
-                    .create {
-                        .setwh(321,107);
+                top:1020 / @vw;
+            }
+        }
+        .stock {
+            .option5 {
+                .setwh(256,301);
+                .rt(72,643);
+            }
+            .copy-nose {
+                .setwh(489,209);
+                .cl(489);
+                top: 983 / @vw;
+            }
+        }
+        .mirror-box {
+            .setwh(632,736);
+            .cl(632);
+            top: 200 / @vw;
+            .mirror {
+                .setwh(632,736);
+            }
+            .Group {
+                .setwh(750,1467);
+                .cl(750);
+                top: -200 / @vw;
+            }
+            .Group2 {
+                .setwh(750,1467);
+                .cl(750);
+                top: -200 / @vw;
+            }
+            .photo {
+                .setwh(410, 577);
+                .cl(410);
+                top: 83 / @vw;
+            }
+        }
+        .banana-leaf {
+            .setwh(386,347);
+            .rt(0,608);
+        }
+        .banana-leaf1 {
+            .setwh(750,1467);
+            .cl(750);
+        }
+       
+    }
+    // 脸颊受损
+    .cheek-damage {
+        .obscuration-box {
+            .setwh(750,1467);
+            .lt(0,0);
+            .obscuration {
+                .setwh(750,1467);
+                .lt(0,0);
+            }
+            .cheek-2 {
+                .setwh(614,621);
+                .cl(614);
+                top: 320 / @vw;
+            }
+            .cheek-1 {
+                .setwh(333,631);
+                .cl(333);
+                top: 294 / @vw;
+            }
+            .cheek-copy {
+                .setwh(332,298);
+                .cl(332);
+                top: 978 / @vw;
+            }
+        }
+        .detection-result {
+            .cheek-copy1 {
+                .setwh(587,214);
+                .cl(587);
+                top: 1020 / @vw;
+            }
+        }
+        .stock {
+            .cheek-copy3 {
+                .setwh(489,208);
+                .cl(489);
+                top: 983 / @vw;
+            }
+        }
+        .mirror-box {
+            .setwh(647,736);
+            .cl(647);
+            top: 203 / @vw;
+            .cheek-img1 {
+                .setwh(647,736);
+                .cl(647);
+            }
+            .photo {
+                .setwh(410, 577);
+               .lt(130,90);
+            }
+            .lion_dance {
+                .setwh(274,267);
+                .lb(0,0);
+            }
+            .Ingot {
+                .setwh(109,76);
+                .rt(75,24);
+            }
+            .Ingot1 {
+                .setwh(94,67);
+                .lt(28,351);
+            }
+            .option2 {
+                .setwh(218,340);
+                .rb(22,44)
+            }
+            .Ingot2 {
+                .setwh(109,76);
+                .rb(130,10);
+            }
+            .red {
+                .setwh(89,91);
+                .rt(163,338);
+            }
+            .Ingot3 {
+                .setwh(134,99);
+                .lb(194,0)
+            }
+        }
+    }
+    // 抽奖失败页
+    .fail-box {
+        .gift-box {
+            .setwh(712,885);
+            .lt(0,332);
+            .gift {
+                .setwh(712,885);
+                .lt(0,0); 
+            }
+            .product {
+                .setwh(99,103);
+                .lt(332,400);
+            }
+        }
+    }
+    // 抽奖成功页 
+    .succeed-box {
+        // 成功页
+        .succeed {
+            .gift-package {
+                .setwh(722,689);
+                .cl(722);
+                top: 409 / @vw;
+                .gift {
+                    .setwh(722,689);
+                    .lt(0,0);
+                }
+                .over {
+                    .setwh(554,644);
+                    .lt(95,-233);
+                }
+            }
+            .lucky-text {
+                .setwh(506,185);
+                .cl(506);
+                top: 1067 / @vw;
+            }
+            .overwhelmed-btn {
+                .setwh(238,107);
+                .cl(238);
+                top: 1280 / @vw;
+                .overwhelmed {
+                    .setwh(238,107);
+                }
+            }
+        }
+        // 填写信息页
+        .fill-information {
+            .gift-package {
+                .setwh(722,689);
+                .cl(722);
+                top: 409 / @vw;
+                .gift {
+                    .setwh(722,689);
+                    .lt(0,0);
+                }
+                .ranking {
+                    .setwh(574,573);
+                    .cl(574);
+                    top: -200 / @vw;
+                }
+            }
+            .information-box {
+                width: 514 / @vw;
+                height: 205 / @vw;
+                .cl(514);
+                top: 1015 / @vw;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                li {
+                    display: flex;
+                    align-items: flex-end;
+                    height: 68 / @vw;
+                    img {
+                        justify-self: flex-end;
+                        margin-right: 8 / @vw;
+                    }
+                    input {
+                        width: 100%;
+                        background-color: transparent;
+                        border: 0px;
+                        outline: none;
+                        border-bottom: 1px solid #74799c;
+                        color: #cfd2e7;
+                        font-size: 26 / @vw;
+                    }
+                    .name {
+                        .setwh(85,32);
+                    }
+                    .call {
+                        .setwh(77,33);
+                    }
+                    .site {
+                        .setwh(158,36);
                     }
                 }
-                .again-btn {
-                    .setwh(238,85);
-                    .again {
-                        .setwh(238,107);
-                    }
+            }
+            .putIn-btn {
+                .setwh(238,107);
+                .cl(238);
+                top: 1282 / @vw;
+                .putIn {
+                    .setwh(238,107);
+                    .lt(0,0);
+                }
+            }
+        }
+        // 填写成功
+        .fill-successful {
+            .presentation-box {
+                .setwh(712,885);
+                .cl(712);
+                top: 330 / @vw;
+                .put-box {
+                    .setwh(712,885);
+                    .lt(0,0);
+                }
+                .fail-product{
+                    .setwh(99,103);
+                    .lt(332,400);
                 }
             }
         }
@@ -396,9 +677,55 @@ body {
         .setwh(97,129);
         .lt(81,74);
     }
-    .music {
+    .music-box {
         .setwh(79,79);
         .rt(58,62);
+        .music {
+            .setwh(79,79);
+        }
+    }
+    .det-btn {
+        .setwh(603,85);
+        .cl(586);
+        top: 1278 / @vw;
+        display: flex;
+        justify-content: space-between;
+        .create-btn {
+            .setwh(321,85);
+            .create {
+                .setwh(321,107);
+            }
+        }
+        .again-btn {
+            .setwh(238,85);
+            .again {
+                .setwh(238,107);
+            }
+        }
+    }
+    .product {
+        .setwh(368,366);
+        .rb(0,0);
+    }
+    .QR {
+        .setwh(120,120);
+        .lt(51,1293);
+    }
+    .longPress-btn {
+        .setwh(265,93);
+        .cl(265);
+        top: 1230 / @vw;
+        .long-press {
+         .setwh(265,93);
+        }
+    }
+    .get-btn {
+         .setwh(265,93);
+         .cl(265);
+         top: 1327 / @vw;
+         .get {
+             .setwh(265,93);
+         }
     }
 }
 @keyframes move {

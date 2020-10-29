@@ -17,7 +17,6 @@ body {
   margin: 0 auto;
   height: 100%;
   background: url(../img/bg.png) no-repeat;
-  background-size: 100% 100%;
   overflow: hidden;
 }
 .box {
@@ -256,6 +255,7 @@ body {
   left: 50%;
   margin-left: -38.4vw;
   top: 6.13333333vw;
+  border-radius: 15% 15% 80% 80%;
 }
 .box .uploading .shield-box .shield {
   width: 84.26666667vw;
@@ -379,81 +379,6 @@ body {
   margin-left: -26.2vw;
   top: 130.4vw;
 }
-.box .eye-damage .detection-result .meteor1 {
-  width: 34.8vw;
-  height: 8.26666667vw;
-  position: absolute;
-  left: 9.06666667vw;
-  top: 88.93333333vw;
-}
-.box .eye-damage .detection-result .meteor2 {
-  width: 42.4vw;
-  height: 20vw;
-  position: absolute;
-  right: 1.86666667vw;
-  top: 98.13333333vw;
-}
-.box .eye-damage .detection-result .meteor3 {
-  width: 42.53333333vw;
-  height: 20.13333333vw;
-  position: absolute;
-  left: 2.66666667vw;
-  top: 103.06666667vw;
-}
-.box .eye-damage .detection-result .mirror-box {
-  width: 84.26666667vw;
-  height: 98.13333333vw;
-  position: absolute;
-  left: 50%;
-  margin-left: -42.13333333vw;
-  top: 26.66666667vw;
-}
-.box .eye-damage .detection-result .mirror-box .mirror {
-  width: 84.26666667vw;
-  height: 98.13333333vw;
-}
-.box .eye-damage .detection-result .mirror-box .ren {
-  width: 100vw;
-  height: 195.6vw;
-  position: absolute;
-  left: -7.86666667vw;
-  top: -26.66666667vw;
-}
-.box .eye-damage .detection-result .meteor {
-  width: 34.8vw;
-  height: 30.8vw;
-  position: absolute;
-  right: 4vw;
-  top: 22.26666667vw;
-}
-.box .eye-damage .detection-result .star {
-  width: 7.86666667vw;
-  height: 8.8vw;
-  position: absolute;
-  left: 19.06666667vw;
-  top: 67.73333333vw;
-}
-.box .eye-damage .detection-result .star1 {
-  width: 7.73333333vw;
-  height: 8.53333333vw;
-  position: absolute;
-  right: 16.8vw;
-  top: 60vw;
-}
-.box .eye-damage .detection-result .star2 {
-  width: 12.26666667vw;
-  height: 14.53333333vw;
-  position: absolute;
-  right: 18.93333333vw;
-  top: 42.93333333vw;
-}
-.box .eye-damage .detection-result .eye-1 {
-  width: 23.6vw;
-  height: 50.26666667vw;
-  position: absolute;
-  right: 15.06666667vw;
-  top: 79.06666667vw;
-}
 .box .eye-damage .detection-result .copy {
   width: 78.13333333vw;
   height: 28.53333333vw;
@@ -462,31 +387,503 @@ body {
   margin-left: -39.06666667vw;
   top: 136vw;
 }
-.box .eye-damage .detection-result .det-btn {
-  width: 80.4vw;
-  height: 11.33333333vw;
+.box .eye-damage .stock .copy1 {
+  width: 67.46666667vw;
+  height: 27.86666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -33.73333333vw;
+  top: 130.93333333vw;
+}
+.box .eye-damage .meteor1 {
+  width: 34.8vw;
+  height: 8.26666667vw;
+  position: absolute;
+  left: 9.06666667vw;
+  top: 88.93333333vw;
+}
+.box .eye-damage .meteor2 {
+  width: 42.4vw;
+  height: 20vw;
+  position: absolute;
+  right: 1.86666667vw;
+  top: 98.13333333vw;
+}
+.box .eye-damage .meteor3 {
+  width: 42.53333333vw;
+  height: 20.13333333vw;
+  position: absolute;
+  left: 2.66666667vw;
+  top: 103.06666667vw;
+}
+.box .eye-damage .mirror-box {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 26.66666667vw;
+}
+.box .eye-damage .mirror-box .mirror {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+}
+.box .eye-damage .mirror-box .ren {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: -7.86666667vw;
+  top: -26.66666667vw;
+}
+.box .eye-damage .meteor {
+  width: 34.8vw;
+  height: 30.8vw;
+  position: absolute;
+  right: 4vw;
+  top: 22.26666667vw;
+}
+.box .eye-damage .star {
+  width: 7.86666667vw;
+  height: 8.8vw;
+  position: absolute;
+  left: 19.06666667vw;
+  top: 67.73333333vw;
+}
+.box .eye-damage .star1 {
+  width: 7.73333333vw;
+  height: 8.53333333vw;
+  position: absolute;
+  right: 16.8vw;
+  top: 60vw;
+}
+.box .eye-damage .star2 {
+  width: 12.26666667vw;
+  height: 14.53333333vw;
+  position: absolute;
+  right: 18.93333333vw;
+  top: 42.93333333vw;
+}
+.box .eye-damage .eye-1 {
+  width: 23.6vw;
+  height: 50.26666667vw;
+  position: absolute;
+  right: 15.06666667vw;
+  top: 79.06666667vw;
+}
+.box .nose-damage .obscuration-box {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .nose-damage .obscuration-box .obscuration {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .nose-damage .obscuration-box .nose-2 {
+  width: 81.86666667vw;
+  height: 82.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -40.93333333vw;
+  top: 42.66666667vw;
+}
+.box .nose-damage .obscuration-box .nose-1 {
+  width: 44.4vw;
+  height: 84.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.2vw;
+  top: 39.2vw;
+}
+.box .nose-damage .obscuration-box .nose-copy {
+  width: 39.86666667vw;
+  height: 25.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -19.93333333vw;
+  top: 130.4vw;
+}
+.box .nose-damage .obscuration-box .nose-copy2 {
+  width: 67.33333333vw;
+  height: 35.2vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -33.66666667vw;
+  top: 139.2vw;
+}
+.box .nose-damage .detection-result .nose-img1 {
+  width: 35.6vw;
+  height: 41.86666667vw;
+  position: absolute;
+  right: 9.86666667vw;
+  top: 88.53333333vw;
+}
+.box .nose-damage .detection-result .copy3 {
+  width: 78.13333333vw;
+  height: 28.26666667vw;
   position: absolute;
   left: 50%;
   margin-left: -39.06666667vw;
-  top: 170.4vw;
+  top: 136vw;
+}
+.box .nose-damage .stock .option5 {
+  width: 34.13333333vw;
+  height: 40.13333333vw;
+  position: absolute;
+  right: 9.6vw;
+  top: 85.73333333vw;
+}
+.box .nose-damage .stock .copy-nose {
+  width: 65.2vw;
+  height: 27.86666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.6vw;
+  top: 131.06666667vw;
+}
+.box .nose-damage .mirror-box {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 26.66666667vw;
+}
+.box .nose-damage .mirror-box .mirror {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+}
+.box .nose-damage .mirror-box .Group {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -50vw;
+  top: -26.66666667vw;
+}
+.box .nose-damage .mirror-box .Group2 {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -50vw;
+  top: -26.66666667vw;
+}
+.box .nose-damage .mirror-box .photo {
+  width: 54.66666667vw;
+  height: 76.93333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -27.33333333vw;
+  top: 11.06666667vw;
+}
+.box .nose-damage .banana-leaf {
+  width: 51.46666667vw;
+  height: 46.26666667vw;
+  position: absolute;
+  right: 0vw;
+  top: 81.06666667vw;
+}
+.box .nose-damage .banana-leaf1 {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -50vw;
+}
+.box .cheek-damage .obscuration-box {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .cheek-damage .obscuration-box .obscuration {
+  width: 100vw;
+  height: 195.6vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .cheek-damage .obscuration-box .cheek-2 {
+  width: 81.86666667vw;
+  height: 82.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -40.93333333vw;
+  top: 42.66666667vw;
+}
+.box .cheek-damage .obscuration-box .cheek-1 {
+  width: 44.4vw;
+  height: 84.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.2vw;
+  top: 39.2vw;
+}
+.box .cheek-damage .obscuration-box .cheek-copy {
+  width: 44.26666667vw;
+  height: 39.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.13333333vw;
+  top: 130.4vw;
+}
+.box .cheek-damage .detection-result .cheek-copy1 {
+  width: 78.26666667vw;
+  height: 28.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.13333333vw;
+  top: 136vw;
+}
+.box .cheek-damage .stock .cheek-copy3 {
+  width: 65.2vw;
+  height: 27.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.6vw;
+  top: 131.06666667vw;
+}
+.box .cheek-damage .mirror-box {
+  width: 86.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -43.13333333vw;
+  top: 27.06666667vw;
+}
+.box .cheek-damage .mirror-box .cheek-img1 {
+  width: 86.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -43.13333333vw;
+}
+.box .cheek-damage .mirror-box .photo {
+  width: 54.66666667vw;
+  height: 76.93333333vw;
+  position: absolute;
+  left: 17.33333333vw;
+  top: 12vw;
+}
+.box .cheek-damage .mirror-box .lion_dance {
+  width: 36.53333333vw;
+  height: 35.6vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+}
+.box .cheek-damage .mirror-box .Ingot {
+  width: 14.53333333vw;
+  height: 10.13333333vw;
+  position: absolute;
+  right: 10vw;
+  top: 3.2vw;
+}
+.box .cheek-damage .mirror-box .Ingot1 {
+  width: 12.53333333vw;
+  height: 8.93333333vw;
+  position: absolute;
+  left: 3.73333333vw;
+  top: 46.8vw;
+}
+.box .cheek-damage .mirror-box .option2 {
+  width: 29.06666667vw;
+  height: 45.33333333vw;
+  position: absolute;
+  right: 2.93333333vw;
+  bottom: 5.86666667vw;
+}
+.box .cheek-damage .mirror-box .Ingot2 {
+  width: 14.53333333vw;
+  height: 10.13333333vw;
+  position: absolute;
+  right: 17.33333333vw;
+  bottom: 1.33333333vw;
+}
+.box .cheek-damage .mirror-box .red {
+  width: 11.86666667vw;
+  height: 12.13333333vw;
+  position: absolute;
+  right: 21.73333333vw;
+  top: 45.06666667vw;
+}
+.box .cheek-damage .mirror-box .Ingot3 {
+  width: 17.86666667vw;
+  height: 13.2vw;
+  position: absolute;
+  left: 25.86666667vw;
+  bottom: 0vw;
+}
+.box .fail-box .gift-box {
+  width: 94.93333333vw;
+  height: 118vw;
+  position: absolute;
+  left: 0vw;
+  top: 44.26666667vw;
+}
+.box .fail-box .gift-box .gift {
+  width: 94.93333333vw;
+  height: 118vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .fail-box .gift-box .product {
+  width: 13.2vw;
+  height: 13.73333333vw;
+  position: absolute;
+  left: 44.26666667vw;
+  top: 53.33333333vw;
+}
+.box .succeed-box .succeed .gift-package {
+  width: 96.26666667vw;
+  height: 91.86666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -48.13333333vw;
+  top: 54.53333333vw;
+}
+.box .succeed-box .succeed .gift-package .gift {
+  width: 96.26666667vw;
+  height: 91.86666667vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .succeed-box .succeed .gift-package .over {
+  width: 73.86666667vw;
+  height: 85.86666667vw;
+  position: absolute;
+  left: 12.66666667vw;
+  top: -31.06666667vw;
+}
+.box .succeed-box .succeed .lucky-text {
+  width: 67.46666667vw;
+  height: 24.66666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -33.73333333vw;
+  top: 142.26666667vw;
+}
+.box .succeed-box .succeed .overwhelmed-btn {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.86666667vw;
+  top: 170.66666667vw;
+}
+.box .succeed-box .succeed .overwhelmed-btn .overwhelmed {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+}
+.box .succeed-box .fill-information .gift-package {
+  width: 96.26666667vw;
+  height: 91.86666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -48.13333333vw;
+  top: 54.53333333vw;
+}
+.box .succeed-box .fill-information .gift-package .gift {
+  width: 96.26666667vw;
+  height: 91.86666667vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .succeed-box .fill-information .gift-package .ranking {
+  width: 76.53333333vw;
+  height: 76.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -38.26666667vw;
+  top: -26.66666667vw;
+}
+.box .succeed-box .fill-information .information-box {
+  width: 68.53333333vw;
+  height: 27.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -34.26666667vw;
+  top: 135.33333333vw;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
-.box .eye-damage .detection-result .det-btn .create-btn {
-  width: 42.8vw;
-  height: 11.33333333vw;
+.box .succeed-box .fill-information .information-box li {
+  display: flex;
+  align-items: flex-end;
+  height: 9.06666667vw;
 }
-.box .eye-damage .detection-result .det-btn .create-btn .create {
-  width: 42.8vw;
-  height: 14.26666667vw;
+.box .succeed-box .fill-information .information-box li img {
+  justify-self: flex-end;
+  margin-right: 1.06666667vw;
 }
-.box .eye-damage .detection-result .det-btn .again-btn {
+.box .succeed-box .fill-information .information-box li input {
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid #74799c;
+  color: #cfd2e7;
+  font-size: 3.46666667vw;
+}
+.box .succeed-box .fill-information .information-box li .name {
+  width: 11.33333333vw;
+  height: 4.26666667vw;
+}
+.box .succeed-box .fill-information .information-box li .call {
+  width: 10.26666667vw;
+  height: 4.4vw;
+}
+.box .succeed-box .fill-information .information-box li .site {
+  width: 21.06666667vw;
+  height: 4.8vw;
+}
+.box .succeed-box .fill-information .putIn-btn {
   width: 31.73333333vw;
-  height: 11.33333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.86666667vw;
+  top: 170.93333333vw;
 }
-.box .eye-damage .detection-result .det-btn .again-btn .again {
+.box .succeed-box .fill-information .putIn-btn .putIn {
   width: 31.73333333vw;
   height: 14.26666667vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .succeed-box .fill-successful .presentation-box {
+  width: 94.93333333vw;
+  height: 118vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.46666667vw;
+  top: 44vw;
+}
+.box .succeed-box .fill-successful .presentation-box .put-box {
+  width: 94.93333333vw;
+  height: 118vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+.box .succeed-box .fill-successful .presentation-box .fail-product {
+  width: 13.2vw;
+  height: 13.73333333vw;
+  position: absolute;
+  left: 44.26666667vw;
+  top: 53.33333333vw;
 }
 .box .rectangular_wire {
   width: 96vw;
@@ -504,12 +901,80 @@ body {
   left: 10.8vw;
   top: 9.86666667vw;
 }
-.box .music {
+.box .music-box {
   width: 10.53333333vw;
   height: 10.53333333vw;
   position: absolute;
   right: 7.73333333vw;
   top: 8.26666667vw;
+}
+.box .music-box .music {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+}
+.box .det-btn {
+  width: 80.4vw;
+  height: 11.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.06666667vw;
+  top: 170.4vw;
+  display: flex;
+  justify-content: space-between;
+}
+.box .det-btn .create-btn {
+  width: 42.8vw;
+  height: 11.33333333vw;
+}
+.box .det-btn .create-btn .create {
+  width: 42.8vw;
+  height: 14.26666667vw;
+}
+.box .det-btn .again-btn {
+  width: 31.73333333vw;
+  height: 11.33333333vw;
+}
+.box .det-btn .again-btn .again {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+}
+.box .product {
+  width: 49.06666667vw;
+  height: 48.8vw;
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+}
+.box .QR {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 6.8vw;
+  top: 172.4vw;
+}
+.box .longPress-btn {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  top: 164vw;
+}
+.box .longPress-btn .long-press {
+  width: 35.33333333vw;
+  height: 12.4vw;
+}
+.box .get-btn {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  top: 176.93333333vw;
+}
+.box .get-btn .get {
+  width: 35.33333333vw;
+  height: 12.4vw;
 }
 @keyframes move {
   0% {
