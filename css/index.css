@@ -254,8 +254,9 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -38.4vw;
-  top: 6.13333333vw;
-  border-radius: 15% 15% 80% 80%;
+  top: 4.133333vw;
+  border-radius: 9% 9% 80% 80%;
+  transform: scale(0.98);
 }
 .box .uploading .shield-box .shield {
   width: 84.26666667vw;
@@ -298,6 +299,24 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -45.93333333vw;
+}
+.box .detection .mirror-box .shild {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 3.46666667vw;
+}
+.box .detection .mirror-box .portrait {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  top: 3.46666667vw;
+  border-radius: 9% 9% 80% 80%;
+  transform: scale(0.88);
 }
 .box .detection .result-box {
   position: absolute;

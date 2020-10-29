@@ -40,15 +40,25 @@ setInterval (function () {
 $(".begin-btn").on("click",function(){
     $(".home").hide();
     $(".uploading").show();
+    photographed();
 })
 // 上传页->检测页
 $(".up-btn").on("click",function(){
+    // 判断是否上传图片
+    if($(".uploading .portrait").attr("src") == "img/portrait.png"){
+       layer.open({
+            content: '请上传照片',
+            skin: 'msg',
+            time: 2 //2秒后自动关闭
+        });
+        return false;
+    }
     $(".uploading").hide();
     $(".detection").show();
+
 })
 
 // 点击上传页的金属框进行拍照
-photographed();
 function photographed(){
     var takePictureOnclick = function(){
         var takePicture = document.getElementById("takepicture");
@@ -65,7 +75,7 @@ function photographed(){
                 try {
                     var URL = window.URL || window.webkitURL;
                     var blob = URL.createObjectURL(file);　　// 获取照片的文件流
-                    console.log(blob)
+                    // console.log(blob)
                     compressPicture(blob);　　// 压缩照片
                 }
                 catch (e) {
@@ -114,7 +124,30 @@ function photographed(){
             // uploadPicture(imgurl);
             console.log(imgurl);
             // document.querySelector("img").src=imgurl
-            $(".shield-box .portrait").attr("src",imgurl);
+            // $(".shield-box .portrait").attr("src",imgurl);
         };
     };
+
+     //获取对象input file 的图片地址，放进img
+　　$("#takepicture").change(function () {//input的id
+    　　var objUrl = getObjectURL(this.files[0]);//调用函数调取图片地址
+    　　obUrl = objUrl;
+    // 　　console.log("objUrl = " + objUrl);
+    　　if (objUrl) {
+    　　    $(".portrait").attr("src", objUrl).show();//选择img的ID，给src赋值
+    　　}
+　　});
+
+　　//获取input file的文件地址
+　　function getObjectURL(file) {
+    　　var url = null;
+    　　if (window.createObjectURL != undefined) {//basic
+    　　    url = window.createObjectURL(file);
+    　　} else if (window.URL != undefined) {//mozilla(firefox)兼容火狐
+    　　    url = window.URL.createObjectURL(file);
+    　　} else if (window.webkitURL != undefined) {//webkit or chrome
+    　　    url = window.webkitURL.createObjectURL(file);
+    　　}
+    　　return url;
+　　}
 }
