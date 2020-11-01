@@ -284,6 +284,7 @@ body {
 .box .uploading .up-btn img {
   width: 34.66666667vw;
   height: 14.26666667vw;
+  animation: scale 2s infinite;
 }
 .box .detection .mirror-box {
   width: 91.86666667vw;
@@ -362,6 +363,7 @@ body {
 .box .detection .det-btn .detection-btn {
   width: 42.8vw;
   height: 14.26666667vw;
+  animation: scale 2s infinite;
 }
 .box .eye-damage .obscuration-box {
   width: 100vw;
@@ -447,12 +449,21 @@ body {
   width: 84.26666667vw;
   height: 98.13333333vw;
 }
-.box .eye-damage .mirror-box .ren {
-  width: 100vw;
-  height: 195.6vw;
+.box .eye-damage .mirror-box .portrait {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
   position: absolute;
-  left: -7.86666667vw;
-  top: -26.66666667vw;
+  left: 0vw;
+  top: 0vw;
+  transform: scale(0.9, 0.89);
+  border-radius: 15% 15% 80% 80%;
+}
+.box .eye-damage .mirror-box .shild {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
 }
 .box .eye-damage .meteor {
   width: 34.8vw;
@@ -467,6 +478,7 @@ body {
   position: absolute;
   left: 19.06666667vw;
   top: 67.73333333vw;
+  animation: scale1 2s infinite;
 }
 .box .eye-damage .star1 {
   width: 7.73333333vw;
@@ -474,6 +486,7 @@ body {
   position: absolute;
   right: 16.8vw;
   top: 60vw;
+  animation: scale1 1s infinite;
 }
 .box .eye-damage .star2 {
   width: 12.26666667vw;
@@ -481,6 +494,7 @@ body {
   position: absolute;
   right: 18.93333333vw;
   top: 42.93333333vw;
+  animation: scale1 1.5s infinite;
 }
 .box .eye-damage .eye-1 {
   width: 23.6vw;
@@ -948,6 +962,7 @@ body {
 .box .det-btn .create-btn .create {
   width: 42.8vw;
   height: 14.26666667vw;
+  animation: scale 2s infinite;
 }
 .box .det-btn .again-btn {
   width: 31.73333333vw;
@@ -956,6 +971,7 @@ body {
 .box .det-btn .again-btn .again {
   width: 31.73333333vw;
   height: 14.26666667vw;
+  animation: scale 2s infinite;
 }
 .box .product {
   width: 49.06666667vw;
@@ -1020,6 +1036,17 @@ body {
   }
   50% {
     transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1);

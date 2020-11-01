@@ -245,6 +245,7 @@ body {
             top: 1264 / @vw;
             img {
                 .setwh(260,107);
+                animation: scale 2s infinite;
             }
         }
     }
@@ -302,6 +303,7 @@ body {
             overflow: hidden;
             .detection-btn {
                 .setwh(321,107);
+                animation: scale 2s infinite;
             }
         }
     }
@@ -363,9 +365,16 @@ body {
             .mirror {
                 .setwh(632,736);
             }
-            .ren {
-                .setwh(750,1467);
-                .lt(-59,-200)
+            .portrait {
+                .setwh(632,736);
+                .lt(0,0);
+                transform: scale(0.9,0.89);
+                border-radius: 15% 15% 80% 80%;
+            
+            }
+            .shild {
+                .setwh(632,746);
+                .cl(632);
             }
         }
         .meteor {
@@ -375,14 +384,17 @@ body {
         .star {
             .setwh(59,66);
             .lt(143,508);
+            animation: scale1 2s infinite;
         }
         .star1 {
             .setwh(58,64);
             .rt(126,450);
+            animation: scale1 1s infinite;
         }
         .star2 {
             .setwh(92,109);
             .rt(142,322);
+            animation: scale1 1.5s infinite;
         }
         .eye-1 {
             .setwh(177,377);
@@ -707,12 +719,14 @@ body {
             .setwh(321,85);
             .create {
                 .setwh(321,107);
+                animation: scale 2s infinite;
             }
         }
         .again-btn {
             .setwh(238,85);
             .again {
                 .setwh(238,107);
+                animation: scale 2s infinite;
             }
         }
     }
@@ -766,6 +780,17 @@ body {
     }
     50% {
         transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.8);
     }
     100% {
         transform: scale(1);
