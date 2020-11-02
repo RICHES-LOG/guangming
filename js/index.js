@@ -136,7 +136,11 @@ window.onload = function(){
     }
 
     $(".det-btn").on("click",function(){
-        if($(".eye-box .eye").attr("src","img/eye26-40.png")){
+        var eye = ($(".eye-box .eye").attr("src"));
+        var nose = ($(".nose-box .nose").attr("src"));
+        var cheek = ($(".cheek-box .cheek").attr("src"));
+        if(eye == "img/eye26-40.png"){
+            console.log(1,"eye")
             $(".eye-damage").fadeIn() ;
             var eyeTime = setTimeout (function(){
                 $(".detection").fadeOut() ;
@@ -144,9 +148,8 @@ window.onload = function(){
                 $(".eye-damage .detection-result").fadeIn() ;
                 clearTimeout(eyeTime)
             },1000)
-            return false;
-        }
-        if($(".nose-box .nose").attr("src","img/nose26-40.png")){
+        }else if(nose == "img/nose26-40.png"){
+            console.log(2,"nose")
             $(".nose-damage").fadeIn() ;
             var noseTime = setTimeout (function(){
                 $(".detection").fadeOut() ;
@@ -154,9 +157,8 @@ window.onload = function(){
                 $(".nose-damage .detection-result").fadeIn() ;
                 clearTimeout(noseTime)
             },1000)
-            return false;
-        }
-        if($(".cheek-box .cheek").attr("scr","img/cheek26-40.png")){
+        }else if(cheek === "img/cheek26-40.png"){
+            console.log(3,"cheek")
             $(".cheek-damage").fadeIn() ;
             var time = setTimeout (function(){
                 $(".detection").fadeOut() ;
@@ -164,14 +166,18 @@ window.onload = function(){
                 $(".cheek-damage .detection-result").fadeIn() ;
                 clearTimeout(time)
             },1000)
-            return false;
         }
     })
+
+
     // 生成海报
     $(".create-btn").on("click",function(){
-        console.log($(this).parent().parent())
         $(this).parent().parent().fadeOut();
         $(this).parent().parent().next().fadeIn() ;
+    })
+    // 再测一次
+    $(".again-btn").on("click",function(){
+        window.location.reload();
     })
     // 领取
     var get = Math.ceil(Math.random()*2);
@@ -192,9 +198,10 @@ window.onload = function(){
     })
     // 填写信息提交
     $(".putIn-btn").on("click",function(){
-        var name = $("name-txet").val().match(/^(?:[\u4e00-\u9fa5]+)(?:●[\u4e00-\u9fa5]+)*$|^[a-zA-Z0-9]+\s?[\.·\-()a-zA-Z]*[a-zA-Z]+$/);
-        var call = $("callText").val().match(/^1[3456789]d{9}$/);
-        if(name == "" && call == "" && $("siteText").val() == ""){
+        var name = /^[\u4E00-\u9FA5]{1,6}$/;
+        var call = /^1[3456789]d{9}$/;
+
+        if (name.test($(".name-txet").val()) == "" && call.test($(".callText").val()) == "" &&  $(".siteText").val() == "") {
             layer.open({
                 content: '请填写完整',
                 skin: 'msg',
@@ -202,9 +209,11 @@ window.onload = function(){
             });
             return false;
         }
+        
         $(".fill-information").fadeOut();
         $(".fill-successful").fadeIn();
     })
+
     // 点击上传页的金属框进行拍照
     function photographed(){
         var takePictureOnclick = function(){

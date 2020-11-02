@@ -475,6 +475,16 @@ body {
                 .cl(410);
                 top: 83 / @vw;
             }
+            .portrait {
+                .setwh(632,736);
+                .cl(632);
+                border-radius: 20% 20% 80% 80%;
+                transform: scale(0.89);
+            }
+            .shild {
+                .setwh(632, 746);
+                .cl(632);
+            }
         }
         .banana-leaf {
             .setwh(386,347);
@@ -533,9 +543,16 @@ body {
                 .setwh(647,736);
                 .cl(647);
             }
-            .photo {
-                .setwh(410, 577);
-               .lt(130,90);
+            .portrait {
+                .setwh(647,736);
+                .cl(647);
+                border-radius: 15% 15% 80% 80%;
+                transform: scale(0.89)
+            }
+            .shild2 {
+                .setwh(621,710);
+                .cl(640);
+                top: 20 / @vw;
             }
             .lion_dance {
                 .setwh(274,267);
@@ -564,6 +581,26 @@ body {
             .Ingot3 {
                 .setwh(134,99);
                 .lb(194,0)
+            }
+            .got1 {
+                .setwh(109,76);
+                .rt(75,0);
+                animation: leaf 6s linear 0s infinite;
+            }
+            .got2 {
+                .setwh(94,67);
+                .lt(28,0);
+                animation: leaf 5s linear 0s infinite;
+            }
+            .got3{
+                .setwh(134,99);
+                .lt(194,0);
+                animation: leaf 4s linear 0s infinite;
+            }
+            .got4 {
+                .setwh(109,76);
+                .rt(130,0);
+                animation: leaf 6s linear 0s infinite;
             }
         }
     }
@@ -672,6 +709,7 @@ body {
                 .putIn {
                     .setwh(238,107);
                     .lt(0,0);
+                    animation: scale 2s infinite;
                 }
             }
         }
@@ -709,7 +747,7 @@ body {
             .setwh(79,79);
         }
     }
-    .det-btn {
+    .dets-btn {
         .setwh(603,85);
         .cl(586);
         top: 1278 / @vw;
@@ -795,4 +833,48 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+@keyframes leaf {
+    0% {
+        /*在天上准备掉落*/
+        // opacity: 0;
+        /*移动 旋转  每一个状态样式属性必须一一对应*/
+        /*一个元素可以有多个变形 用空格隔开*/
+        transform: rotate(0deg) translate(0,0);
+    }
+    30% {
+        /*掉落在空中*/
+        // opacity: 1;
+        transform: rotate(5deg) translate(100px,180px);
+    }
+    60% {
+        /*掉落在地下*/
+        // opacity: 0;
+        transform: rotate(10deg) translate(100px,300px);
+    }
+    100% {
+        /*利用60-100对应的时间模拟等待*/
+        opacity: 0;
+        transform: rotate(10deg) translate(100px,360px);
+    }
+}
+
+
+
+
+
+// 兼容
+@media screen and (max-height: 603px){
+    .loading {
+        .rectangular_wire {
+            .setwh(720,1170);
+            .cl(720);
+            .ct(1170);
+        }
+        .progress_bar {
+            transform: scale(0.7);
+        }
+    }
+
 }

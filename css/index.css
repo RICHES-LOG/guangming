@@ -615,6 +615,22 @@ body {
   margin-left: -27.33333333vw;
   top: 11.06666667vw;
 }
+.box .nose-damage .mirror-box .portrait {
+  width: 84.26666667vw;
+  height: 98.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+  border-radius: 20% 20% 80% 80%;
+  transform: scale(0.89);
+}
+.box .nose-damage .mirror-box .shild {
+  width: 84.26666667vw;
+  height: 99.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.13333333vw;
+}
 .box .nose-damage .banana-leaf {
   width: 51.46666667vw;
   height: 46.26666667vw;
@@ -698,12 +714,22 @@ body {
   left: 50%;
   margin-left: -43.13333333vw;
 }
-.box .cheek-damage .mirror-box .photo {
-  width: 54.66666667vw;
-  height: 76.93333333vw;
+.box .cheek-damage .mirror-box .portrait {
+  width: 86.26666667vw;
+  height: 98.13333333vw;
   position: absolute;
-  left: 17.33333333vw;
-  top: 12vw;
+  left: 50%;
+  margin-left: -43.13333333vw;
+  border-radius: 15% 15% 80% 80%;
+  transform: scale(0.89);
+}
+.box .cheek-damage .mirror-box .shild2 {
+  width: 82.8vw;
+  height: 94.66666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -42.66666667vw;
+  top: 2.66666667vw;
 }
 .box .cheek-damage .mirror-box .lion_dance {
   width: 36.53333333vw;
@@ -753,6 +779,38 @@ body {
   position: absolute;
   left: 25.86666667vw;
   bottom: 0vw;
+}
+.box .cheek-damage .mirror-box .got1 {
+  width: 14.53333333vw;
+  height: 10.13333333vw;
+  position: absolute;
+  right: 10vw;
+  top: 0vw;
+  animation: leaf 6s linear 0s infinite;
+}
+.box .cheek-damage .mirror-box .got2 {
+  width: 12.53333333vw;
+  height: 8.93333333vw;
+  position: absolute;
+  left: 3.73333333vw;
+  top: 0vw;
+  animation: leaf 5s linear 0s infinite;
+}
+.box .cheek-damage .mirror-box .got3 {
+  width: 17.86666667vw;
+  height: 13.2vw;
+  position: absolute;
+  left: 25.86666667vw;
+  top: 0vw;
+  animation: leaf 4s linear 0s infinite;
+}
+.box .cheek-damage .mirror-box .got4 {
+  width: 14.53333333vw;
+  height: 10.13333333vw;
+  position: absolute;
+  right: 17.33333333vw;
+  top: 0vw;
+  animation: leaf 6s linear 0s infinite;
 }
 .box .fail-box .gift-box {
   width: 94.93333333vw;
@@ -895,6 +953,7 @@ body {
   position: absolute;
   left: 0vw;
   top: 0vw;
+  animation: scale 2s infinite;
 }
 .box .succeed-box .fill-successful .presentation-box {
   width: 94.93333333vw;
@@ -945,7 +1004,7 @@ body {
   width: 10.53333333vw;
   height: 10.53333333vw;
 }
-.box .det-btn {
+.box .dets-btn {
   width: 80.4vw;
   height: 11.33333333vw;
   position: absolute;
@@ -955,20 +1014,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.box .det-btn .create-btn {
+.box .dets-btn .create-btn {
   width: 42.8vw;
   height: 11.33333333vw;
 }
-.box .det-btn .create-btn .create {
+.box .dets-btn .create-btn .create {
   width: 42.8vw;
   height: 14.26666667vw;
   animation: scale 2s infinite;
 }
-.box .det-btn .again-btn {
+.box .dets-btn .again-btn {
   width: 31.73333333vw;
   height: 11.33333333vw;
 }
-.box .det-btn .again-btn .again {
+.box .dets-btn .again-btn .again {
   width: 31.73333333vw;
   height: 14.26666667vw;
   animation: scale 2s infinite;
@@ -1050,5 +1109,40 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes leaf {
+  0% {
+    /*在天上准备掉落*/
+    /*移动 旋转  每一个状态样式属性必须一一对应*/
+    /*一个元素可以有多个变形 用空格隔开*/
+    transform: rotate(0deg) translate(0, 0);
+  }
+  30% {
+    /*掉落在空中*/
+    transform: rotate(5deg) translate(100px, 180px);
+  }
+  60% {
+    /*掉落在地下*/
+    transform: rotate(10deg) translate(100px, 300px);
+  }
+  100% {
+    /*利用60-100对应的时间模拟等待*/
+    opacity: 0;
+    transform: rotate(10deg) translate(100px, 360px);
+  }
+}
+@media screen and (max-height: 603px) {
+  .loading .rectangular_wire {
+    width: 96vw;
+    height: 156vw;
+    left: 50%;
+    margin-left: -48vw;
+    position: absolute;
+    top: 50%;
+    margin-top: -78vw;
+  }
+  .loading .progress_bar {
+    transform: scale(0.7);
   }
 }
